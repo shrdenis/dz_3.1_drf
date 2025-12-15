@@ -16,4 +16,4 @@ class Measurement(models.Model):
     image = models.ImageField(upload_to='measurements/', blank=True, null=True)
 
     def __str__(self) -> str:
-        return f'{self.sensor} - {self.temperature}'
+        return f'Температура {self.temperature}°C в {self.sensor}'
